@@ -1,7 +1,10 @@
 package com.example;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Random;
 
+@Component("randomMessageService")
 public class RandomTextMessageService implements MessageService{
     private final String[] messages = {
             "Hej", "12244",
